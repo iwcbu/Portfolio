@@ -18,10 +18,10 @@ export function PortfolioInterface({ selectedProject, onSelectProject, onReturn 
     <main className="journey-content">
       <section className="journey-section hero-section" id="universe" aria-labelledby="hero-title">
         <div className="content-lock hero-content">
-          <p className="eyebrow">Independent portfolio · signal 001</p>
-          <h1 id="hero-title">{profile.name}</h1>
-          <p className="hero-role">{profile.title}</p>
-          <p className="hero-statement">{profile.heroStatement}</p>
+          <p className="eyebrow">Portfolio · signal 001</p>
+          <h1 id="hero-title">IAN CAMPBELL</h1>
+          <p className="hero-role">Software Engineer & Data Developer</p>
+          <p className="hero-statement">Aiming to develop products that make a difference.</p>
           <div className="scroll-prompt" aria-hidden="true">
             <span>Scroll to begin the journey</span>
             <i />

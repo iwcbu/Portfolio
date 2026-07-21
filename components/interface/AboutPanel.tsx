@@ -1,6 +1,6 @@
 import { profile } from "../../data/profile";
 
-const futureMarkers = ["Hometown / city", "Ocean / surfing", "Mountains / skiing", "Motorsports", "Telescope / space"];
+const futureMarkers = ["BOSTON", "Ocean / surfing", "Mountains / skiing", "Motorsports", "Space" ];
 
 export function AboutPanel() {
   return (
@@ -8,8 +8,10 @@ export function AboutPanel() {
       <div className="panel-coordinate">CHECKPOINT 03 / 40.7128° N</div>
       <p className="eyebrow">Atmospheric entry · about</p>
       <h2>About Me</h2>
-      <p className="panel-lede">{profile.about}</p>
-      <p>{profile.aboutClosing}</p>
+
+      {/* TO DO: ABOUT SECTION TEXT */}
+      <p className="panel-lede"> ---- ABOUT SECTION PLACE HOLDER ---- </p>
+      <p>I am most engaged when I am learning something new, solving a difficult problem, or turning an idea into something useful.</p>
       <div className="future-markers">
         <span>Future environment coordinates</span>
         <ul>

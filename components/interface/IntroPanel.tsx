@@ -6,7 +6,7 @@ export function IntroPanel() {
     <div className="interface-panel intro-panel">
       <div className="panel-coordinate">CHECKPOINT 01 / GALACTIC PLANE</div>
       <p className="eyebrow">Signal acquired · introduction</p>
-      <h2>Hello, I’m {profile.name}.</h2>
+      <h2>Hello, I'm Ian!</h2>
       <p className="panel-lede">{profile.introduction}</p>
       <p>{profile.personalNote}</p>
       <div className="skills-grid">

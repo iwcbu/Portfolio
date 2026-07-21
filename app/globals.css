@@ -86,13 +86,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .interface-panel::before { top: 0; }.interface-panel::after { bottom: 0; }
 .panel-coordinate { color: #69777a; text-transform: uppercase; font: 8px var(--font-geist-mono); letter-spacing: .18em; margin-bottom: 34px; }
 .interface-panel h2, .projects-heading h2, .project-panel h2 { margin: 0 0 20px; font-size: clamp(36px, 4vw, 64px); font-weight: 430; line-height: .98; letter-spacing: -.045em; }
-.interface-panel > p:not(.eyebrow):not(.contact-callout) { color: var(--muted); font-size: 14px; line-height: 1.75; max-width: 61ch; }
+.interface-panel > p:not(.eyebrow):not(.contact-callout) { color: var(--muted); font-size: 14px; line-height: 1.75; max-width: 70ch; }
 .interface-panel .panel-lede { color: var(--ink) !important; font-size: clamp(15px, 1.4vw, 18px) !important; }
 .skills-grid { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .skills-grid section { position: relative; padding: 18px 20px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .skills-grid section > span { position: absolute; top: 8px; right: 10px; color: #5e6b6d; font: 8px var(--font-geist-mono); }
 .skills-grid h3 { margin: 0 0 8px; font: 500 10px var(--font-geist-mono); text-transform: uppercase; letter-spacing: .12em; }
-.skills-grid p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.skills-grid p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
 
 .projects-interface { justify-content: space-between; align-items: flex-start; padding-top: 16vh; }
 .projects-heading { width: min(400px, 34vw); padding: 28px; background: linear-gradient(115deg, rgba(3,7,9,.88), rgba(3,7,9,.35)); border-top: 1px solid var(--line); }

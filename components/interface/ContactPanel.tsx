@@ -12,12 +12,12 @@ export function ContactPanel({ onReturn }: { onReturn: () => void }) {
       <div className="panel-coordinate">FINAL CHECKPOINT / HOME SIGNAL</div>
       <p className="eyebrow">Journey complete · contact</p>
       <h2>Thanks for exploring.</h2>
-      <p className="contact-callout">Let’s build something useful.</p>
+      <p className="contact-callout">Let's build something with positive impact.</p>
       <div className="contact-layout">
         <div>
-          <a className="email-link" href={`mailto:${profile.email}`}>{profile.email}</a>
+          <a className="email-link" href={`mailto:iwc3@outlook.com`}>iwc3@outlook.com</a>
           <div className="contact-links">
-            {socialLinks.map((link) => <a key={link.label} href={link.href}>{link.label} <small>placeholder</small></a>)}
+            {socialLinks.map((link) => <a key={link.label} href={link.href}>{link.label} <small>{link.placeholder}</small></a>)}
           </div>
           <button className="text-button" onClick={onReturn}>↗ Return to the universe</button>
         </div>
@@ -27,6 +27,7 @@ export function ContactPanel({ onReturn }: { onReturn: () => void }) {
             setMessage("Message staged locally. Connect a form service before launch.");
           }}
         >
+          <h4>TO DO - Doesn't send yet</h4>
           <label htmlFor="contact-email">Your email</label>
           <input id="contact-email" type="email" placeholder="you@example.com" required />
           <label htmlFor="contact-message">Message</label>

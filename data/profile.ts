@@ -1,14 +1,14 @@
 // PLACEHOLDER CONTENT: Replace the fields in this object with your real profile.
 export const profile = {
-  name: "Your Name",
+  name: "Ian",
   title: "Software Engineer & Data Developer",
-  location: "Your Location",
+  location: "Boston, Massachusetts",
   heroStatement:
     "Building thoughtful products at the intersection of software, data, and design.",
   introduction:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. I enjoy building useful products, solving technical problems, and learning how complex systems work.",
+"Since graduating from Boston University in December 2025, I’ve continued exploring everything from full-stack applications and cloud infrastructure to machine learning and data analytics.",
   personalNote:
-    "Outside of technology, lorem ipsum dolor sit amet. Replace this with hobbies, interests, location, education, and personality.",
+  "Outside of technology, you’ll usually find me surfing, skiing, or learning something completely new. I bring that same curiosity to my projects; understanding how things work, experimenting with different ideas, and turning complex problems into something useful. Whether I’m programming, exploring new technology, or picking up a new hobby, I’m most engaged when something is challenging to learn and improve.",
   about:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Replace this section with personal background, education, interests, working style, and career direction.",
   aboutClosing:
