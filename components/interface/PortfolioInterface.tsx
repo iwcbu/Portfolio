@@ -40,7 +40,7 @@ export function PortfolioInterface({ selectedProject, onSelectProject, onReturn 
           <div className="projects-heading">
             <p className="eyebrow">Checkpoint 02 · project system</p>
             <h2 id="projects-title">Selected Work</h2>
-            <p>Select a planet to inspect its placeholder case study.</p>
+            <p>Select a planet to inspect it's case study.</p>
           </div>
           <div className="project-index" aria-label="Project index">
             {projects.map((project, index) => (

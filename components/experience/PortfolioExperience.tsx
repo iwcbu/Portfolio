@@ -61,7 +61,7 @@ export function PortfolioExperience() {
   }, [progress]);
 
   const navigate = useCallback((id: PortfolioSectionId) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
+    document.getElementById(id)?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start", inline: "nearest" });
   }, [reducedMotion]);
 
   const moveSection = useCallback((direction: -1 | 1) => {

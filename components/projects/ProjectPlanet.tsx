@@ -19,8 +19,8 @@ export function ProjectPlanet({ project, index, selected, systemFocused, reduced
   const orbitRef = useRef<Group>(null);
   const planetRef = useRef<Mesh>(null);
   const distance = 5.2 + index * 2.35;
-  const speed = 0.055 - index * 0.006;
-  const startAngle = index * 1.38;
+  const speed = .1 - index * 0.006;
+  const startAngle = index * 1.58;
 
   useFrame((_, delta) => {
     if (orbitRef.current && !reducedMotion) orbitRef.current.rotation.y += delta * speed;
@@ -31,10 +31,10 @@ export function ProjectPlanet({ project, index, selected, systemFocused, reduced
     <group>
       <mesh rotation={[Math.PI / 2, 0, 0]}>
         <ringGeometry args={[distance - 0.018, distance + 0.018, 96]} />
-        <meshBasicMaterial color="#6f8c98" transparent opacity={systemFocused ? 0.08 : 0.2} />
+        <meshBasicMaterial color="#6f8c98" transparent opacity={systemFocused ? 0.5 : 0.5} />
       </mesh>
       <group ref={orbitRef} rotation={[0, startAngle, 0]}>
-        <group position={[distance, 0, 0]} scale={selected ? 1.35 : 1}>
+        <group position={[distance, 0, 0]} scale={selected ? 1.25 : 1}>
           <mesh
             ref={planetRef}
             castShadow
@@ -53,11 +53,11 @@ export function ProjectPlanet({ project, index, selected, systemFocused, reduced
             <meshStandardMaterial
               color={project.color}
               emissive={selected ? project.accent : "#000000"}
-              emissiveIntensity={selected ? 0.34 : 0}
+              emissiveIntensity={selected ? .14: 0}
               roughness={0.78}
               metalness={0.08}
               transparent
-              opacity={systemFocused && !selected ? 0.36 : 1}
+              opacity={systemFocused && !selected ? 0.16 : 1}
             />
           </mesh>
           <Html center distanceFactor={10} style={{ pointerEvents: "auto" }}>

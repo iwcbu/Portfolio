@@ -106,7 +106,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .project-index button:hover, .project-index button.is-selected { padding-left: 15px; background: rgba(153,191,190,.11); }
 .project-index button.is-selected { border-left: 2px solid var(--signal); }
 
-.planet-label { min-width: 90px; border: 1px solid rgba(203,224,222,.35); padding: 5px 8px; color: var(--ink); background: rgba(4,9,11,.86); white-space: nowrap; cursor: pointer; font: 8px var(--font-geist-mono); letter-spacing: .06em; text-transform: uppercase; transition: .2s ease; }
+.planet-label { min-width: 90px; border: 1px solid rgba(203,224,222,.35); padding: 5px 8px; color: var(--ink); background: rgba(4,9,11,.86); white-space: nowrap; cursor: pointer; font: 24px var(--font-geist-mono); letter-spacing: .06em; text-transform: uppercase; transition: .2s ease; }
 .planet-label span { color: var(--signal); margin-right: 6px; }.planet-label:hover,.planet-label.is-selected { border-color: var(--signal); background: rgba(21,39,42,.94); }
 
 .future-markers { margin-top: 28px; border-top: 1px solid var(--line); padding-top: 16px; }
@@ -129,7 +129,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .contact-layout form > button { justify-self: start; border: 1px solid var(--signal); color: var(--void); background: var(--signal); padding: 9px 14px; cursor: pointer; text-transform: uppercase; font: 9px var(--font-geist-mono); letter-spacing: .12em; }
 .form-status { margin: 3px 0 0; color: #758285; font: 8px var(--font-geist-mono); }
 
-.project-panel { position: fixed; z-index: 45; top: 90px; right: 24px; bottom: 58px; width: min(480px, calc(100vw - 48px)); padding: 34px 38px; overflow: auto; border: 1px solid var(--line); background: rgba(5,11,14,.94); backdrop-filter: blur(18px); box-shadow: 0 25px 90px rgba(0,0,0,.46); }
+.project-panel { position: fixed; z-index: 45; top: 90px; right: 24px; bottom: 58px; width: min(480px, calc(100vw - 48px)); padding: 34px 38px; overflow: auto; border: 1px solid var(--line); background: rgba(5,11,14,.94); backdrop-filter: blur(18px); box-shadow: 0 25px 90px rgba(0,0,0,.46);}
 .project-panel h2 { font-size: clamp(42px, 5vw, 70px); }
 .panel-close { position: absolute; right: 24px; top: 22px; border: 0; background: none; color: var(--muted); cursor: pointer; font: 9px var(--font-geist-mono); text-transform: uppercase; }
 .panel-close span { font-size: 18px; margin-left: 7px; }.project-lede { color: var(--ink); font-size: 18px; line-height: 1.5; }
@@ -137,7 +137,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .tag-list { display: flex; flex-wrap: wrap; gap: 7px; padding: 22px 0; list-style: none; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .panel-actions { display: flex; gap: 9px; margin-top: 22px; }
 .panel-actions a { border: 1px solid var(--line); padding: 10px 12px; text-decoration: none; font: 10px var(--font-geist-mono); text-transform: uppercase; }
-.panel-hint { position: absolute; bottom: 20px; color: #687477; font: 8px var(--font-geist-mono); }
+.panel-hint { margin-top: 10px; color: #687477; font: 8px var(--font-geist-mono); }
 
 .experience-loader { position: fixed; inset: 0; z-index: 80; display: grid; place-content: center; justify-items: center; opacity: 0; visibility: hidden; background: var(--void); transition: opacity .5s ease, visibility .5s; }
 .experience-loader.is-visible { opacity: 1; visibility: visible; }
@@ -183,7 +183,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   .contact-layout { grid-template-columns: 1fr; gap: 24px; }.contact-panel { max-height: 76vh; overflow: auto; }
   .project-panel { top: 74px; right: 10px; bottom: 52px; width: calc(100vw - 20px); padding: 30px 22px 70px; }
   .section-progress { width: 145px; }.mission-status { max-width: 160px; }.mission-status span { display: none; }
-  .planet-label { font-size: 7px; min-width: 76px; }
+  .planet-label { font-size: 18px; min-width: 76px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -3,16 +3,18 @@ export type PortfolioSectionId =
   | "galaxy"
   | "projects"
   | "earth"
+  | "intermediate"
   | "contact";
 
 export type Project = {
   id: string;
   title: string;
+  nickname: string;
   shortDescription: string;
   longDescription: string;
   technologies: string[];
-  githubUrl: string;
-  liveUrl: string;
+  githubUrl: string | null;
+  liveUrl: string | null;
   featured: boolean;
   color: string;
   accent: string;

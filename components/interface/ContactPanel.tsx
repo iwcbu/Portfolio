@@ -5,7 +5,7 @@ import { profile } from "../../data/profile";
 import { socialLinks } from "../../data/socialLinks";
 
 export function ContactPanel({ onReturn }: { onReturn: () => void }) {
-  const [message, setMessage] = useState("Prototype only — this form does not send yet.");
+  const [message, setMessage] = useState("");
 
   return (
     <div className="interface-panel contact-panel">

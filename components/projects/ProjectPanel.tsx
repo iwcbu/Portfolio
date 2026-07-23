@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import type { Project } from "../../types/portfolio";
+import { projects } from '../../data/projects';
 
 export function ProjectPanel({ project, onClose }: { project: Project; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null);
@@ -21,7 +22,6 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
       <button ref={closeRef} className="panel-close" onClick={onClose} aria-label="Close project details">
         Close <span aria-hidden="true">×</span>
       </button>
-      <p className="eyebrow">Selected work · placeholder case study</p>
       <h2 id="project-panel-title">{project.title}</h2>
       <p className="project-lede">{project.shortDescription}</p>
       <p>{project.longDescription}</p>
@@ -29,8 +29,8 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
         {project.technologies.map((technology) => <li key={technology}>{technology}</li>)}
       </ul>
       <div className="panel-actions">
-        <a href={project.githubUrl}>GitHub <small>placeholder</small></a>
-        <a href={project.liveUrl}>Live demo <small>placeholder</small></a>
+        { project.githubUrl && <a href={project.githubUrl}>GitHub <small>{project.githubUrl}</small></a> }
+        { project.liveUrl && <a href={project.liveUrl}>Live demo <small>{project.nickname}</small></a> }
       </div>
       <p className="panel-hint">Press Escape or use Close to return to the system.</p>
     </aside>
